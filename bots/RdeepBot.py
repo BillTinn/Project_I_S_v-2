@@ -76,7 +76,7 @@ class RdeepBot(Bot):
             my_score = new_game_state.follower.score.direct_points
             opponent_score = new_game_state.leader.score.direct_points
 
-        heuristic = my_score / (my_score + opponent_score)
+        heuristic = my_score / (my_score + opponent_score + 1e-6)
         return heuristic
 
 
