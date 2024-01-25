@@ -2,7 +2,7 @@ from typing import Optional
 from schnapsen.game import Bot, PlayerPerspective, Move, GameState, GamePlayEngine
 import random
 
-from Randbot import RandBot
+from bots.RandBot import RandBot
 
 
 class RdeepBot(Bot):
